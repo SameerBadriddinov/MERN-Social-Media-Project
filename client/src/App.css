@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+.navBg a {
+  color: #000 !important;
+}
+.brand-logo {
+  font-family: "Grand Hotel", cursive;
+}
+.mycard {
+  margin-top: 30px;
+}
+.mycard h2 {
+  font-family: "Grand Hotel", cursive;
+}
+.card__auth {
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 10px auto;
+}
+.profile {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.profileMain {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  border-bottom: 1px solid #555;
+}
+.profileImg {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  object-fit: cover;
+}
+.infoProfile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.infoProfile p {
+  margin: 0 10px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+  gap: 1rem;
+}
+.img-item {
+  display: flex;
+  flex-direction: column;
+}
+.img-item img {
+  object-fit: cover;
+}
+.home__card {
+  max-width: 500px;
+  height: max-content;
+  margin: 30px auto;
+  padding: 20px;
+}
+.postCard {
+  margin: 10px auto;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+.postCard h2 {
+  font-family: "Grand Hotel", cursive;
+}
+.cardBody {
+  padding: 30px;
+}
+.cardPost {
+  position: relative;
+  margin: 0px auto;
+  width: 800px;
+  min-height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+.cardPost img {
+  width: 800px;
+  height: 280px;
+  object-fit: cover;
+}
+.commentPost {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column-reverse;
+  width: 90%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 15px;
+}
+.commentPost h6 {
+  margin: 0;
+}
+.profileName {
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.profileName button {
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+@media screen and (max-width: 800px) {
+  .profileImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .cardPost {
+    width: 100%;
+  }
+  .cardPost img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .img-item img {
+    width: 282px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .profileMain {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
